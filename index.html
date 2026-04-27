@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Daily Quest: Day Planner is a lightweight iOS app for recurring daily planning, reminders, progress logs, backups, and widgets.">
-    <title>Daily Quest: Day Planner</title>
-    <link rel="icon" href="AppIcon.png">
-    <link rel="apple-touch-icon" href="AppIcon.png">
+    <meta name="description" content="Plan your day with reusable quests, simple daily picks, reminders, and progress tracking.">
+    <title>Daily Quest</title>
+    <link rel="icon" href="Assets.xcassets/AppIcon.appiconset/AppIcon.png">
+    <link rel="apple-touch-icon" href="Assets.xcassets/AppIcon.appiconset/AppIcon.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="site-header">
         <nav class="nav container" aria-label="Main navigation">
             <a class="brand" href="index.html" aria-label="Daily Quest home">
-                <img src="AppIcon.png" alt="" class="brand-icon">
+                <img src="Assets.xcassets/AppIcon.appiconset/AppIcon.png" alt="" class="brand-icon">
                 <span>Daily Quest</span>
             </a>
             <div class="nav-links">
@@ -27,51 +27,89 @@
         <section class="hero container">
             <div class="hero-copy">
                 <p class="eyebrow">Simple daily planning for iPhone</p>
-                <h1>Daily Quest: Day Planner</h1>
-                <p class="hero-subtitle">Build a reusable bank of everyday quests, choose what matters today, and keep a calm record of your progress.</p>
+                <h1>Daily Quest</h1>
+                <p class="hero-subtitle">Plan your day with reusable quests, simple daily picks, reminders, and progress tracking.</p>
                 <div class="hero-actions">
                     <!-- Replace the App Store button link with your App Store URL when your listing is ready. -->
                     <a class="button button-primary" href="#" aria-label="App Store link placeholder">App Store link coming soon</a>
                     <a class="button button-secondary" href="support.html">Get Support</a>
                 </div>
             </div>
-            <div class="hero-visual" aria-hidden="true">
-                <!-- Replace this placeholder with a real Daily Quest app screenshot when available. -->
+            <div class="hero-visual">
+                <div class="device-frame hero-device">
+                    <img src="site-images/initial_picker.png" alt="Daily Quest pick for today screen showing reusable quests grouped into General, Chores, and Reminders." class="app-shot">
+                </div>
             </div>
         </section>
 
         <section class="section">
             <div class="container section-heading">
-                <p class="eyebrow">Built for recurring routines</p>
+                <p class="eyebrow">How it works</p>
                 <h2>Keep today clear without turning life into a project board.</h2>
-                <p>Daily Quest is designed for simple repeatable planning: small tasks, daily choices, and a light history of what you completed.</p>
+                <p>Daily Quest is built for recurring routines and everyday planning without the weight of a full calendar or heavy task manager.</p>
             </div>
 
             <div class="container feature-grid">
                 <article class="feature-card">
-                    <h3>Reusable Quest Bank</h3>
-                    <p>Create quests once and keep them ready for future days. Organize them into categories so your routine stays easy to scan.</p>
+                    <span class="feature-number">01</span>
+                    <h3>Build reusable quests</h3>
+                    <p>Create, edit, and organize quests once, then keep them ready in categories for the days when they fit.</p>
                 </article>
                 <article class="feature-card">
-                    <h3>Pick Tasks for Today</h3>
-                    <p>Choose only the quests that fit your day. Daily Quest helps you focus on a short, intentional list instead of a crowded schedule.</p>
+                    <span class="feature-number">02</span>
+                    <h3>Pick what fits today</h3>
+                    <p>Choose the quests that match today instead of carrying around a long master list or crowded schedule.</p>
                 </article>
                 <article class="feature-card">
+                    <span class="feature-number">03</span>
+                    <h3>Track progress lightly</h3>
+                    <p>Complete today’s list, review your log over time, and use reminders and widgets to keep the loop easy to return to.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section section-soft">
+            <div class="container section-heading">
+                <p class="eyebrow">Inside the app</p>
+                <h2>See the daily loop in a few screens.</h2>
+                <p>Daily Quest keeps the flow simple: maintain a reusable quest bank, choose the right quests for today, and review your progress later.</p>
+            </div>
+
+            <div class="container screenshot-grid">
+                <article class="screenshot-card">
+                    <div class="device-frame">
+                        <img src="site-images/quests.png" alt="Daily Quest quest bank screen with reusable quests grouped into categories." class="app-shot">
+                    </div>
+                    <h3>Quest Bank</h3>
+                    <p>Create reusable quests, group them into categories, and schedule them for every day or selected weekdays.</p>
+                </article>
+                <article class="screenshot-card">
+                    <div class="device-frame">
+                        <img src="site-images/today.png" alt="Daily Quest today screen showing the selected quests for the current day." class="app-shot app-shot-today">
+                    </div>
+                    <h3>Today</h3>
+                    <p>Keep the day focused with a short list of selected quests and a clear view of what is done or still open.</p>
+                </article>
+                <article class="screenshot-card">
+                    <div class="device-frame">
+                        <img src="site-images/log.png" alt="Daily Quest log screen showing the monthly calendar and completed and open quests for a selected day." class="app-shot">
+                    </div>
                     <h3>Progress Log</h3>
-                    <p>Review completed tasks over time and notice the patterns that help your days feel more grounded.</p>
+                    <p>Review completed and open quests in the log to spot patterns and keep a light record of your days.</p>
                 </article>
-                <article class="feature-card">
-                    <h3>Reminders</h3>
-                    <p>Set local reminders for important routines so your plan can gently meet you at the right time.</p>
-                </article>
-                <article class="feature-card">
-                    <h3>Backups</h3>
-                    <p>Export and import backup files when you want to move or protect your data. You stay in control of the files you create.</p>
-                </article>
-                <article class="feature-card">
-                    <h3>Widgets</h3>
-                    <p>Use widgets to keep your daily quests close by without opening the app every time you want to check your progress.</p>
-                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container split">
+                <div>
+                    <p class="eyebrow">More than a checklist</p>
+                    <h2>Built for routines that repeat.</h2>
+                </div>
+                <div>
+                    <p>Daily Quest supports local reminders, backup export and import, and Home Screen and Lock Screen widgets so the app stays useful without getting heavy.</p>
+                    <p>It is designed for recurring life rhythms and everyday planning, not long-term project management or a full calendar.</p>
+                </div>
             </div>
         </section>
 
@@ -82,7 +120,7 @@
                     <h2>Your plans belong to you.</h2>
                 </div>
                 <div>
-                    <p>Daily Quest does not require an account and is built around local device storage. Your quests, categories, daily selections, completion log, reminders, backup files, and widget data stay on your device unless you choose to export a backup.</p>
+                    <p>Daily Quest does not require an account and is built around local device storage. Your quests, categories, daily selections, completion log, reminders, backup files, and widget data stay on your device unless you choose to export or share a backup.</p>
                     <a class="text-link" href="privacy.html">Read the Privacy Policy</a>
                 </div>
             </div>

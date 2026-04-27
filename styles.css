@@ -109,13 +109,24 @@ a:hover {
 
 .hero {
     min-height: calc(100vh - 64px);
-    display: flex;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 420px);
     align-items: center;
+    gap: 48px;
     padding: 76px 0 88px;
 }
 
 .hero-copy {
     max-width: 650px;
+}
+
+.hero-visual {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-device {
+    width: min(100%, 360px);
 }
 
 .eyebrow {
@@ -238,11 +249,54 @@ p {
 }
 
 .feature-card {
-    min-height: 210px;
+    min-height: 190px;
     padding: 26px;
     border: 1px solid var(--line);
     border-radius: var(--radius);
     background: var(--surface);
+}
+
+.feature-number {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: var(--accent);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.screenshot-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.screenshot-card {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.screenshot-card h3,
+.screenshot-card p {
+    margin-bottom: 0;
+}
+
+.device-frame {
+    padding: 16px;
+    border: 1px solid rgba(29, 29, 31, 0.05);
+    border-radius: 32px;
+    background: linear-gradient(180deg, #ffffff 0%, #f3f5f8 100%);
+    box-shadow: 0 12px 28px rgba(29, 29, 31, 0.07);
+}
+
+.app-shot {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.app-shot-today {
+    object-position: top center;
 }
 
 .feature-card p,
@@ -319,12 +373,22 @@ p {
 @media (max-width: 860px) {
     .hero {
         min-height: auto;
+        grid-template-columns: 1fr;
         padding: 54px 0 72px;
     }
 
     .feature-grid,
-    .split {
+    .split,
+    .screenshot-grid {
         grid-template-columns: 1fr;
+    }
+
+    .hero-visual {
+        justify-content: flex-start;
+    }
+
+    .hero-device {
+        max-width: 340px;
     }
 }
 
